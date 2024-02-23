@@ -7,8 +7,8 @@ export default function Layout({ children }) {
     <>
     <section>
       <NavbarComp />
-      <main className='w-full h-full '>
-        <div className='w-11/12 mx-auto'>
+      <main className='h-full'>
+        <div className=' flex justify-center '>
         {children}
         </div>
       </main>
