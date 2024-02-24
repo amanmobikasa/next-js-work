@@ -46,8 +46,8 @@ const SignUp = ()=> {
     },[response]);
 
   return (
-    <Layout>
-        <form onSubmit={handleSubmitForm} className="flex max-w-md w-1/2 !md:w-[45%] flex-col gap-4">
+    <Layout Heading={"Sign Up For User"}>
+        <form onSubmit={handleSubmitForm} className="flex max-w-md w-1/2 !md:w-[45%] flex-col justify-center gap-4 h-full">
         <div>
             <div className="mb-2 block">
             <Label htmlFor="email2" value="First Name" />
@@ -79,13 +79,7 @@ const SignUp = ()=> {
             <TextInput onChange={handleChangeInput}  name='repeat_password' value={signUpData?.repeat_password} id="repeat-password" type="password" required shadow />
         </div>
         <div className="flex items-center gap-2">
-            <Checkbox id="agree" />
-            <Label htmlFor="agree" className="flex">
-            I agree with the&nbsp;
-            <Link href="#" className="text-cyan-600 hover:underline dark:text-cyan-500">
-                terms and conditions
-            </Link>
-            </Label>
+            <Link href={"/login"}>Already have an account? Login</Link>
         </div>
         <Button type="submit">{isLoading ? "Loading..." : "Register new account"}</Button>
         </form>

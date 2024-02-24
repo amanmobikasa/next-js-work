@@ -70,8 +70,9 @@ const Login = () => {
 
 
   return (
-    <Layout >
-    <form onSubmit={handleSubmit} className="flex w-1/2 md:w-[45%] max-w-md flex-col gap-4 justify-center ">
+    <Layout Heading={"Login For User"}>
+    <section className='h-screen w-full'>
+    <form onSubmit={handleSubmit} className="flex w-1/2 md:w-[45%] mx-auto max-w-md flex-col gap-4 h-full mt-[3rem]">
       <div>
         <div className="mb-2 block">
           <Label htmlFor="email1" value="User Name" />
@@ -91,6 +92,7 @@ const Login = () => {
       </div>
       <Button type="submit">{isLoading ? "Loading..." : "Submit"}</Button>
     </form>
+    </section>
     </Layout>
   );
 }

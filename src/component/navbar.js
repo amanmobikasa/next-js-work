@@ -23,6 +23,8 @@ const NavbarComp =()=> {
     }
   },[]);
 
+  console.log("global data", globalJobData);
+
   const handleLogout = () => {
     sessionStorage.removeItem('accessToken');
     sessionStorage.removeItem('refreshToken');
@@ -48,18 +50,6 @@ const NavbarComp =()=> {
     setInputSearch(value);
   }
 
- 
-
-
-
-  // useEffect(()=>{
-  //   if(!sessionStorage.getItem('accessToken')){
-  //     router.push('/login')
-  //   }
-  //   else{
-  //     router.push('/')
-  //   } 
-  // },[])
 
   return <>
     <Navbar className='bg-gray-100 shadow-sm ' fluid rounded>
@@ -79,8 +69,8 @@ const NavbarComp =()=> {
         <Navbar.Link as={Link} href="#" active>
           Home
         </Navbar.Link>
-        <Navbar.Link as={Link} href="">
-          about
+        <Navbar.Link as={Link} href="/signup">
+          signup
         </Navbar.Link>
         <Navbar.Link as={Link} href='/login'>login</Navbar.Link>
         <Navbar.Link onClick={handleLogout} >logout</Navbar.Link>

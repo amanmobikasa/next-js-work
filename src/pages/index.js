@@ -1,4 +1,4 @@
-import { Inter, Montserrat_Alternates } from "next/font/google";
+import { Inter } from "next/font/google";
 import Layout from "@/component/layout";
 import CardsComp from "@/component/cards";
 import { useCallback, useEffect, useState } from "react";
@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
 
   const [jobResultState, setJobResultState] = useState([]);
-  const [sorting, setSorting] = useState("desc");
+  const [sorting, setSorting] = useState(null);
   // const {data,error,loading} = useFetchData("https://learnkoodsapi.onrender.com/jobs_api/");
 
 
@@ -41,20 +41,20 @@ export default function Home() {
   //   }
   // };
 
-  useEffect(()=>{
-    if(job_api){
-      const {results} = job_api;
-      // setJobResultState(results);
+  // useEffect(()=>{
+  //   if(job_api){
+  //     const {results} = job_api;
+  //     // setJobResultState(results);
       
-      setJobResultState((prev)=>{
-        const sortedJobs = results.sort((a, b) => {
-          return sorting === 'desc' ? new Date(b.timestamp) - new Date(a.timestamp) : new Date(a.timestamp) - new Date(b.timestamp);
-        });
-        return sortedJobs;
-      });
-      sessionStorage.setItem("jobResultState", JSON.stringify(jobResultState));
-    }
-  },[job_api, sorting])
+  //     setJobResultState((prev)=>{
+  //       const sortedJobs = results.sort((a, b) => {
+  //         return sorting === 'desc' ? new Date(b.timestamp) - new Date(a.timestamp) : new Date(a.timestamp) - new Date(b.timestamp);
+  //       });
+  //       return sortedJobs;
+  //     });
+  //     sessionStorage.setItem("jobResultState", JSON.stringify(jobResultState));
+  //   }
+  // },[job_api, sorting])
 
 
 
@@ -79,32 +79,36 @@ export default function Home() {
   //   }
   // };
 
-  // const sortJobs = useCallback((order) => {
-  //   const sortedJobs = [...jobResultState].sort((a, b) => {
-  //     return order === 'desc' ? new Date(b.timestamp) - new Date(a.timestamp) : new Date(a.timestamp) - new Date(b.timestamp);
-  //   });
-  //   setJobResultState(sortedJobs);
-  //   // setSorting(order);
-  // }, [jobResultState]);
+  // console.log("api data", job_api);
+  useEffect(()=>{
+      const {results} = job_api;
+      setJobResultState(()=>{
+        sessionStorage.setItem("jobResultState", JSON.stringify(results));
+        return results
+      });
+  },[job_api])
 
-  // const handleDescSorting = useCallback(() => {
-  //   sortJobs('desc');
-  // }, [sortJobs]);
+  const sortJobs = useCallback((order) => {
+    const sortedJobs = [...jobResultState].sort((a, b) => {
+      return order === 'desc' ? new Date(b.timestamp) - new Date(a.timestamp) : new Date(a.timestamp) - new Date(b.timestamp);
+    });
+    setJobResultState(sortedJobs);
+    // setSorting(order);
+  }, [jobResultState]);
 
-  // const handleAscSorting = useCallback(() => {
-  //   sortJobs('asc');
-  // }, [sortJobs]);
+  const handleDescSorting = useCallback(() => {
+    sortJobs('desc');
+    setSorting("desc")
+  }, [sortJobs]);
+
+  const handleAscSorting = useCallback(() => {
+    sortJobs('asc');
+    setSorting("asc")
+  }, [sortJobs]);
 
   console.log("sortingdata", jobResultState)
 
 
-
-
-
-// Call the function to make the API request
-// useEffect(()=>{
-//   getJobsData();
-// },[])
 
   return (
     <>
@@ -120,8 +124,8 @@ export default function Home() {
             <div className="flex justify-end px-[2rem]">
             <div className="flex items-center gap-x-3">
               <h1>Sort By : <span>Date</span></h1>
-              <button onClick={()=> setSorting("desc")} className={`bg-gray-200 px-3 py-2 text-sm rounded-md font-bold ${sorting === "desc" ? "bg-red-500 text-white" : ""}`}>Desc</button>
-              <button onClick={()=>setSorting("asc")} className={`bg-gray-200 px-3 py-2 text-sm rounded-md font-bold ${sorting === "asc" ? "bg-red-500 text-white" : ""}`}>Asc</button>
+              <button onClick={handleDescSorting } className={`bg-gray-200 px-3 py-2 text-sm rounded-md font-bold ${sorting === "desc" ? "bg-red-500 text-white" : ""}`}>Desc</button>
+              <button onClick={handleAscSorting} className={`bg-gray-200 px-3 py-2 text-sm rounded-md font-bold ${sorting === "asc" ? "bg-red-500 text-white" : ""}`}>Asc</button>
             </div>
             </div>
         </div>
