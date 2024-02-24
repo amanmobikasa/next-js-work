@@ -1,8 +1,13 @@
 'use client'
 import NavbarComp from './navbar'
 import FooterComp from './footer'
+import { useState } from 'react'
  
 export default function Layout({ children }) {
+  
+
+  
+
   return (
     <>
     <section>

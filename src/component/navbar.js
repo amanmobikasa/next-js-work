@@ -1,17 +1,27 @@
-'use client';
+'use client'
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link';
-import {  Navbar, TextInput } from 'flowbite-react';
+import {  ListGroup, Navbar, TextInput } from 'flowbite-react';
 import { useRouter } from 'next/router';
 import logo from '@/../public/images/logo.jpg'
 import Image from 'next/image';
+import ListGroupComp from './listgroup';
+
 
 
 const NavbarComp =()=> {
   const router = useRouter();
   const [inputSearch, setInputSearch] = useState("")
+  const [globalJobData, setGlobalData] = useState([]);
+  const[filterJobDataState, setFilterJobDataState] = useState([]); 
   
 
+  useEffect(()=>{
+    const get_jobs_data = JSON.parse(sessionStorage.getItem("jobResultState"))
+    if(get_jobs_data){
+      setGlobalData(get_jobs_data)
+    }
+  },[]);
 
   const handleLogout = () => {
     sessionStorage.removeItem('accessToken');
@@ -21,12 +31,26 @@ const NavbarComp =()=> {
   }
 
 
+  useEffect(() => {
+    // Filter the data based on the search input value.
+    if (globalJobData.length > 0) {
+      const filteredData = globalJobData.filter((item) =>
+        item.job_title.toLowerCase().includes(inputSearch.toLowerCase())
+      );
+      setFilterJobDataState(filteredData);
+    }
+  }, [inputSearch, globalJobData]);
+
+  console.log("search Result", filterJobDataState);
+
   const handleSearchInput = (event)=> {
     const {value} = event.target
     setInputSearch(value);
   }
 
-  console.log("inputSearch", inputSearch);
+ 
+
+
 
   // useEffect(()=>{
   //   if(!sessionStorage.getItem('accessToken')){
@@ -37,7 +61,7 @@ const NavbarComp =()=> {
   //   } 
   // },[])
 
-  return (
+  return <>
     <Navbar className='bg-gray-100 shadow-sm ' fluid rounded>
       <Navbar.Brand as={Link} href="/" className='space-x-4'>
         {/* <img src={logo} className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" /> */}
@@ -62,6 +86,12 @@ const NavbarComp =()=> {
         <Navbar.Link onClick={handleLogout} >logout</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
-  );
+    <div className="">
+      {filterJobDataState.length > 0 && inputSearch !== '' && (
+        <ListGroupComp filterJobDataState={filterJobDataState} />
+      )}
+    </div>
+    
+  </>
 }
 export default NavbarComp;

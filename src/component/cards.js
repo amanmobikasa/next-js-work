@@ -45,7 +45,7 @@ const CardsComp =({jobObject})=> {
         
       </div>
       <div>
-        <h1 className='text-xs'>Posted Date : <span className='font-bold'>{formattedDate}</span></h1>
+        <h1 className='text-xs'>Posted Date : <span className='font-bold'>{timestamp}</span></h1>
       </div>
       <div>
         <h1 className='text-xs'>Company : <span className='font-bold '>{company}</span> | Location : <span className='font-bold'>{location}</span></h1>
@@ -54,7 +54,6 @@ const CardsComp =({jobObject})=> {
         <p>{job_des ? job_des.slice(0, 30) : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum vel voluptatem recusandae mollitia"}...</p>
       </div>
       <div className="flex items-center justify-between">
-        <span className="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
         <a
           href={url}
           className="rounded-lg bg-cyan-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
