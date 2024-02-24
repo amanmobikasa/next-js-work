@@ -1,26 +1,65 @@
 'use client';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link';
-import { Navbar } from 'flowbite-react';
+import {  Navbar, TextInput } from 'flowbite-react';
+import { useRouter } from 'next/router';
+import logo from '@/../public/images/logo.jpg'
+import Image from 'next/image';
+
 
 const NavbarComp =()=> {
+  const router = useRouter();
+  const [inputSearch, setInputSearch] = useState("")
+  
+
+
+  const handleLogout = () => {
+    sessionStorage.removeItem('accessToken');
+    sessionStorage.removeItem('refreshToken');
+    router.push('/login'); // Redirect to the login page or any other desired page after logout.
+    alert('Logged out successfully.'); // Add your desired logging logic here. For example, you can log a message to the console.
+  }
+
+
+  const handleSearchInput = (event)=> {
+    const {value} = event.target
+    setInputSearch(value);
+  }
+
+  console.log("inputSearch", inputSearch);
+
+  // useEffect(()=>{
+  //   if(!sessionStorage.getItem('accessToken')){
+  //     router.push('/login')
+  //   }
+  //   else{
+  //     router.push('/')
+  //   } 
+  // },[])
+
   return (
-    <Navbar fluid rounded>
-      <Navbar.Brand as={Link} href="https://flowbite-react.com">
-        <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
+    <Navbar className='bg-gray-100 shadow-sm ' fluid rounded>
+      <Navbar.Brand as={Link} href="/" className='space-x-4'>
+        {/* <img src={logo} className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" /> */}
+        <div className='rounded h-fit w-fit'>
+           <Image  src={logo} alt="Job Portal Logo" width={50} height={10}/>
+        </div>
+        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Job Portal</span>
       </Navbar.Brand>
       <Navbar.Toggle />
-      <Navbar.Collapse>
-        <Navbar.Link href="#" active>
+      <Navbar.Collapse className='items-center flex'>
+        <div className='flex items-center '>
+          <TextInput onChange={handleSearchInput} value={inputSearch} className='rounded-none w-8/12' type='text' placeholder='search here...'/>
+          {/* <button className=''>Search</button> */}
+        </div>
+        <Navbar.Link as={Link} href="#" active>
           Home
         </Navbar.Link>
-        <Navbar.Link as={Link} href="#">
-          About
+        <Navbar.Link as={Link} href="">
+          about
         </Navbar.Link>
-        <Navbar.Link href="#">Services</Navbar.Link>
-        <Navbar.Link href="#">Pricing</Navbar.Link>
-        <Navbar.Link href="#">Contact</Navbar.Link>
+        <Navbar.Link as={Link} href='/login'>login</Navbar.Link>
+        <Navbar.Link onClick={handleLogout} >logout</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );

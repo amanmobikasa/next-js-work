@@ -1,16 +1,20 @@
 import React,{useEffect}  from 'react'
 import axios from 'axios';
 
+
 export const useFetchData = (endpoint, id="") => {
     const [data, setData] = React.useState(null);
     const [error, setError] = React.useState(null);
+    const [loading, setLoading] = React.useState(false);
   
     useEffect(() => {
       const fetchData = async () => {
+        setLoading(true)
         try {
           const response = await axios.get(endpoint);
           if (response.data.success) {
             setData(response.data.data);
+            setLoading(false)
           } else {
             setError('Error while fetching data');
           }
@@ -28,5 +32,5 @@ export const useFetchData = (endpoint, id="") => {
       };
     }, [endpoint]);
   
-    return { data, error };
+    return { data, error,loading };
   };

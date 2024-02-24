@@ -4,20 +4,23 @@ import Layout from '@/component/layout';
 import { GlobalPostData } from '@/customhook/usePostData';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 
 const Login = () => {
 
   const [loginData , setLoginData] = useState({}) // initial state of login data
   // const {isLoading,postData,response} = GlobalPostData()
-  const [response, setResponse] = useState({})
+  const [response, setResponse] = useState(null)
   const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
 
   const handleChange = (e) => {
     setLoginData({...loginData , [e.target.name] : e.target.value}) 
   }
 
-  console.log("logindata", loginData)
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,7 +34,9 @@ const Login = () => {
         },
         {
           headers: {
+            Authorization : `Bearer ${sessionStorage.getItem("accessToken")}`,
             "Content-Type": "application/json",
+            
           },
         }
       );
@@ -39,7 +44,7 @@ const Login = () => {
       // Handle the successful response
       console.log("res",res);
       setIsLoading(false); // setting the loading to false
-      setResponse(res) // setting the resp 
+      setResponse(res.data) // setting the resp 
     } catch (error) {
       // Handle the error
       console.error("Something went wrong while logging in the user", error);
@@ -47,14 +52,20 @@ const Login = () => {
   };
   
 
-  // useEffect(()=>{
-  //   if(response){
-  //     const {refresh, access} = response.data;
-  //     access && sessionStorage.setItem("accessToken", access);
-  //     refresh && sessionStorage.setItem("refreshToken", refresh);
+  useEffect(()=>{
+    if(response !== null){
+      const {refresh, access, username, email} = response;
+      access && sessionStorage.setItem("accessToken", access);
+      refresh && sessionStorage.setItem("refreshToken", refresh);
+      router.push("/");
+    }
+  },[response])
+
+  // useEffect(() => {
+  //   if (sessionStorage.getItem("accessToken")) {
   //     router.push("/");
   //   }
-  // },[response])
+  // }, []);
 
 
 
@@ -72,6 +83,11 @@ const Login = () => {
           <Label htmlFor="password1" value="Your password" />
         </div>
         <TextInput name='password' value={loginData.password} onChange={handleChange} id="password1" type="password" required />
+      </div>
+      <div>
+        <Link href={"/signup"}>
+          <p className='text-xs font-[400] '>New User! Navigate to SignUp</p>
+        </Link>
       </div>
       <Button type="submit">{isLoading ? "Loading..." : "Submit"}</Button>
     </form>

@@ -47,7 +47,7 @@ const SignUp = ()=> {
 
   return (
     <Layout>
-        <form onSubmit={handleSubmitForm} className="flex max-w-md flex-col gap-4">
+        <form onSubmit={handleSubmitForm} className="flex max-w-md w-1/2 !md:w-[45%] flex-col gap-4">
         <div>
             <div className="mb-2 block">
             <Label htmlFor="email2" value="First Name" />
