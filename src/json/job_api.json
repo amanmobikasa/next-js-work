@@ -1,0 +1,729 @@
+{
+    "count": 433,
+    "next": "https://learnkoodsapi.onrender.com/jobs_api/?page=2",
+    "previous": null,
+    "results": [
+      {
+        "job_id": 1,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "OAuth"
+          },
+          {
+            "data": "Software Architecture"
+          },
+          {
+            "data": "SPSS Statistics"
+          },
+          {
+            "data": "Zbrush"
+          }
+        ],
+        "job_type": "Full Time",
+        "job_title": "Artificial Intelligence Engineer",
+        "exp_required": "1-3 Years",
+        "job_des": "<p>This is the sixth course in the IBM AI Enterprise Workflow Certification specialization.&nbsp;&nbsp; You are STRONGLY encouraged to complete these courses in order as they are not individual independent courses, but part of a workflow where each course builds on the previous ones.&nbsp;&nbsp;&nbsp;&nbsp;</p>\r\n<p aria-hidden=\"false\">This course focuses on models in production at a hypothetical streaming media company.&nbsp; There is an introduction to IBM Watson Machine Learning.&nbsp; You will build your own API in a Docker container and learn how to manage containers with Kubernetes.&nbsp; The course also introduces&nbsp; several other tools in the IBM ecosystem designed to help deploy or maintain models in production.&nbsp; The AI workflow is not a linear process so there is some time dedicated to the most important feedback loops in order to promote efficient iteration on the overall workflow. &nbsp; By the end of this course you will be able to: 1.&nbsp; Use Docker to deploy a flask application 2.&nbsp; Deploy a simple UI to integrate the ML model, Watson NLU, and Watson Visual Recognition 3.&nbsp; Discuss basic Kubernetes terminology 4.&nbsp; Deploy a scalable web application on Kubernetes&nbsp; 5.&nbsp; Discuss the different feedback loops in AI workflow 6.&nbsp; Discuss the use of unit testing in the context of model production 7.&nbsp; Use IBM Watson OpenScale to assess bias and performance of production machine learning models. Who should take this course? This course targets existing data science practitioners that have expertise building machine learning models, who want to deepen their skills on building and deploying AI in large enterprises. If you are an aspiring Data Scientist, this course is NOT for you as you need real world expertise to benefit from the content of these courses. &nbsp; What skills should you have? It is assumed that you have completed Courses 1 through 5 of the IBM AI Enterprise Workflow specialization and you have a solid understanding of the following topics prior to starting this course: Fundamental understanding of Linear Algebra; Understand sampling, probability theory, and probability distributions; Knowledge of descriptive and inferential statistical concepts; General understanding of machine learning techniques and best practices; Practiced understanding of Python and the packages commonly used in data science: NumPy, Pandas, matplotlib, scikit-learn; Familiarity with IBM Watson Studio; Familiarity with the design thinking process.</p>",
+        "min_salary": null,
+        "max_salary": null,
+        "company": "IBM",
+        "location": "London",
+        "company_desc": "",
+        "url": "https://uk.indeed.com/q-ibm-jobs.html",
+        "timestamp": "2023-10-26T08:52:47.630465Z",
+        "job_slug": "artificial-intelligence-engineer-at-ibm",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 2,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "Bookkeeping"
+          },
+          {
+            "data": "Data Processing"
+          },
+          {
+            "data": "Personal Development"
+          }
+        ],
+        "job_type": null,
+        "job_title": "AI Engineer - Artificial Intelligence / Machine Learning",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "Salt Recruitment",
+        "location": "Greater London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/career/business-intelligence-developer/salaries/London?campaignid=serp-more&fromjk=45067b773db75051&from=serp-more",
+        "timestamp": "2023-10-17T07:12:14.395871Z",
+        "job_slug": "ai-engineer-artificial-intelligence-machine-learni",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 3,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "Brackets"
+          },
+          {
+            "data": "Mailwizz"
+          },
+          {
+            "data": "Mechatronics"
+          },
+          {
+            "data": "Screenwriting"
+          },
+          {
+            "data": "Statistical Analysis"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Artificial Intelligence Engineer (m/f/d)",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "QVC",
+        "location": "London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/cmp/IBM/faq",
+        "timestamp": "2023-10-17T07:12:21.659456Z",
+        "job_slug": "artificial-intelligence-engineer-mfd-at-qvc",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 4,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "Analytics"
+          },
+          {
+            "data": "Crystal Reports"
+          },
+          {
+            "data": "CSS"
+          },
+          {
+            "data": "Post-Production"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Software Development Internship",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "Softwire",
+        "location": "London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/q-salt-recruitment-jobs.html",
+        "timestamp": "2023-10-17T04:21:59.571469Z",
+        "job_slug": "software-development-internship-at-softwire",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 5,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "Broadcast Engineering"
+          },
+          {
+            "data": "Email Handling"
+          },
+          {
+            "data": "Genealogy"
+          },
+          {
+            "data": "Robotics"
+          },
+          {
+            "data": "Statistics"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Data Engineer – Artificial Intelligence (m/f/d)",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "QVC",
+        "location": "London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/career/machine-learning-engineer/salaries/Greater-London?campaignid=serp-more&fromjk=4c2780a84ce9d392&from=serp-more",
+        "timestamp": "2023-10-17T04:22:07.862902Z",
+        "job_slug": "data-engineer-artificial-intelligence-mfd-at-qvc",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 6,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "FPGA"
+          },
+          {
+            "data": "Technical Writing"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Software Engineer",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "Hackney Borough Council",
+        "location": "Hybrid remote in London E8",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/q-qvc-jobs.html",
+        "timestamp": "2023-10-17T04:22:13.292503Z",
+        "job_slug": "software-engineer-at-hackney-borough-council",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 7,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "Game Development"
+          },
+          {
+            "data": "HBase"
+          },
+          {
+            "data": "Pentaho"
+          },
+          {
+            "data": "Salesforce App Development"
+          },
+          {
+            "data": "Website Design"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Artificial Intelligence Software Engineer",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "Salt Recruitment",
+        "location": "Greater London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/career/business-intelligence-developer/salaries/London?campaignid=serp-more&fromjk=e64bed396aa8c253&from=serp-more",
+        "timestamp": "2023-10-17T04:22:26.537151Z",
+        "job_slug": "artificial-intelligence-software-engineer-at-salt",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 8,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "Axure"
+          },
+          {
+            "data": "Microsoft Outlook"
+          },
+          {
+            "data": "Mining Engineering"
+          },
+          {
+            "data": "Splunk"
+          },
+          {
+            "data": "Zbrush"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Software Engineer, Pixel",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "Google",
+        "location": "Remote in London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/cmp/Qvc/faq",
+        "timestamp": "2023-10-17T04:22:34.115240Z",
+        "job_slug": "software-engineer-pixel-at-google",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 9,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "CRM"
+          },
+          {
+            "data": "Design"
+          },
+          {
+            "data": "Genetic Engineering"
+          },
+          {
+            "data": "Google App Engine"
+          },
+          {
+            "data": "Magento"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Software Engineer, Google Research",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "Google",
+        "location": "London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/q-softwire-jobs.html",
+        "timestamp": "2023-10-17T04:22:41.924813Z",
+        "job_slug": "software-engineer-google-research-at-google",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 10,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "Building Designer"
+          },
+          {
+            "data": "Customer Support"
+          },
+          {
+            "data": "Face Recognition"
+          },
+          {
+            "data": "Genetic Engineering"
+          },
+          {
+            "data": "Google Adwords"
+          },
+          {
+            "data": "Interior Design"
+          },
+          {
+            "data": "Microbiology"
+          },
+          {
+            "data": "Swift"
+          }
+        ],
+        "job_type": null,
+        "job_title": "AI Engineer, Google Cloud",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "Google",
+        "location": "London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/career/software-development-intern/salaries/London?campaignid=serp-more&fromjk=fc63bf03940b5708&from=serp-more",
+        "timestamp": "2023-10-17T04:22:51.848521Z",
+        "job_slug": "ai-engineer-google-cloud-at-google",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 11,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "Audio Services"
+          },
+          {
+            "data": "Fundraising"
+          },
+          {
+            "data": "Label Design"
+          },
+          {
+            "data": "Redshift"
+          },
+          {
+            "data": "Storage Area Networks"
+          },
+          {
+            "data": "Technical Support"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Mainframe Developer-Software Engineer II",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "JPMorgan Chase & Co",
+        "location": "London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/q-qvc-jobs.html",
+        "timestamp": "2023-10-17T04:23:00.443759Z",
+        "job_slug": "mainframe-developer-software-engineer-ii-at-jpmorg",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 12,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "App Designer"
+          },
+          {
+            "data": "Building Surveyors"
+          },
+          {
+            "data": "Business Plans"
+          },
+          {
+            "data": "Genetic Engineering"
+          },
+          {
+            "data": "Sound Design"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Software Engineer, Cerebra",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "Google",
+        "location": "London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/career/data-engineer/salaries/London?campaignid=serp-more&fromjk=db914adc1f111b04&from=serp-more",
+        "timestamp": "2023-10-17T04:23:09.738602Z",
+        "job_slug": "software-engineer-cerebra-at-google",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 13,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "Linux"
+          },
+          {
+            "data": "Plugin"
+          },
+          {
+            "data": "Product Sourcing"
+          },
+          {
+            "data": "Raspberry Pi"
+          },
+          {
+            "data": "Technical Writing"
+          },
+          {
+            "data": "Xero"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Cloud AI Engineer, Google Cloud",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "Google",
+        "location": "London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/cmp/Qvc/faq",
+        "timestamp": "2023-10-17T04:23:17.814588Z",
+        "job_slug": "cloud-ai-engineer-google-cloud-at-google",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 14,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "3D Design"
+          },
+          {
+            "data": "Data Science"
+          },
+          {
+            "data": "Financial Analysis"
+          },
+          {
+            "data": "Odoo"
+          },
+          {
+            "data": "Shopify"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Software Engineer, Android, Privacy Sandbox",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "Google",
+        "location": "London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/q-hackney-borough-council-jobs.html",
+        "timestamp": "2023-10-17T04:23:26.209648Z",
+        "job_slug": "software-engineer-android-privacy-sandbox-at-googl",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 15,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "Database Development"
+          },
+          {
+            "data": "RESTful"
+          },
+          {
+            "data": "Technical Writing"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Junior Backend Engineer",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "Plum Fintech",
+        "location": "Hybrid remote in London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/career/software-engineer/salaries/London-E8?campaignid=serp-more&fromjk=dba30a7841cf1378&from=serp-more",
+        "timestamp": "2023-10-17T04:23:34.076624Z",
+        "job_slug": "junior-backend-engineer-at-plum-fintech",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 16,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "Adobe InDesign"
+          },
+          {
+            "data": "CMS"
+          },
+          {
+            "data": "Electronics"
+          },
+          {
+            "data": "LESS/Sass/SCSS"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Technical Support Engineer II",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "IBM",
+        "location": "London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/cmp/Hackney-Council/faq",
+        "timestamp": "2023-10-17T04:23:47.156315Z",
+        "job_slug": "technical-support-engineer-ii-at-ibm",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 17,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "Data Processing"
+          },
+          {
+            "data": "Email Developer"
+          },
+          {
+            "data": "Employment Law"
+          },
+          {
+            "data": "Event Staffing"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Software Engineer, Embedded Graphics Drivers",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "Salt Recruitment",
+        "location": "Greater London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/q-google-jobs.html",
+        "timestamp": "2023-10-17T04:23:58.008198Z",
+        "job_slug": "software-engineer-embedded-graphics-drivers-at-sal",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 18,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "Adobe Air"
+          },
+          {
+            "data": "Creative Design"
+          },
+          {
+            "data": "Dart"
+          },
+          {
+            "data": "Finance"
+          },
+          {
+            "data": "Google Analytics"
+          },
+          {
+            "data": "Typescript"
+          }
+        ],
+        "job_type": null,
+        "job_title": "AI/ML Engineer II",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "QVC",
+        "location": "London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/career/software-engineer/salaries/London?campaignid=serp-more&fromjk=eae9b97d6f8d7441&from=serp-more",
+        "timestamp": "2023-10-17T04:24:08.758424Z",
+        "job_slug": "aiml-engineer-ii-at-qvc",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 19,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "Bootstrap"
+          },
+          {
+            "data": "Database Programming"
+          },
+          {
+            "data": "Investment Research"
+          },
+          {
+            "data": "Project Management"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Senior Data Engineer",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "Softwire",
+        "location": "London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/cmp/Google/faq",
+        "timestamp": "2023-10-17T04:24:19.550458Z",
+        "job_slug": "senior-data-engineer-at-softwire",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      },
+      {
+        "job_id": 20,
+        "user": null,
+        "job_image": "/media/job/jobs-1.jpg",
+        "skills_req": [
+          {
+            "data": "Branding"
+          },
+          {
+            "data": "Elasticsearch"
+          },
+          {
+            "data": "Filmmaking"
+          },
+          {
+            "data": "Internet Security"
+          },
+          {
+            "data": "Prezi"
+          }
+        ],
+        "job_type": null,
+        "job_title": "Java/React Fullstack Software Engineer III",
+        "exp_required": "",
+        "job_des": null,
+        "min_salary": null,
+        "max_salary": null,
+        "company": "QVC",
+        "location": "London",
+        "company_desc": null,
+        "url": "https://uk.indeed.com/q-google-jobs.html",
+        "timestamp": "2023-10-17T04:24:34.514098Z",
+        "job_slug": "javareact-fullstack-software-engineer-iii-at-qvc",
+        "is_published": false,
+        "is_closed": false,
+        "category": null
+      }
+    ]
+  }
