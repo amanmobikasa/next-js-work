@@ -130,7 +130,7 @@ export default function Home() {
             </div>
         </div>
           
-          <div className="contaon-cards w-11/12 mx-auto h-full grid lg:grid-cols-3 justify-evenly gap-[2rem] overflow-hidden">
+          <div className="contain-cards w-11/12 mx-auto h-full grid lg:grid-cols-3 justify-evenly gap-[2rem] overflow-hidden">
            
            {
             jobResultState.length > 0 && jobResultState?.map((job_obj, i)=>{

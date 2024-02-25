@@ -13,7 +13,7 @@ export default function Layout({ children, Heading }) {
       <div className='py-10'>
         <h1 style={{fontSize:"3rem", fontWeight:"bold"}} className=' text-center text-[3rem]'> {Heading}</h1>
       </div>
-        <div className=' flex justify-center '>
+        <div className='flex justify-center '>
         {children}
         </div>
       </main>
