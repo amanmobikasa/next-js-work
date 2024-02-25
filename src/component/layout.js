@@ -9,9 +9,9 @@ export default function Layout({ children, Heading }) {
     <>
     <section>
       <NavbarComp />
-      <main className='max-h-full'>
+      <main className='max-h-full '>
       <div className='py-10'>
-        <h1 style={{fontSize:"3rem", fontWeight:"bold"}} className=' text-center'> {Heading}</h1>
+        <h1 style={{fontSize:"3rem", fontWeight:"bold"}} className=' text-center text-[3rem]'> {Heading}</h1>
       </div>
         <div className=' flex justify-center '>
         {children}

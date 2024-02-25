@@ -72,7 +72,7 @@ const Login = () => {
   return (
     <Layout Heading={"Login For User"}>
     <section className='h-screen w-full'>
-    <form onSubmit={handleSubmit} className="flex w-1/2 md:w-[45%] mx-auto max-w-md flex-col gap-4 h-full mt-[3rem]">
+    <form onSubmit={handleSubmit} className="flex lg:w-1/2 w-11/12 md:w-[45%] mx-auto max-w-md flex-col gap-4 h-full mt-[3rem]">
       <div>
         <div className="mb-2 block">
           <Label htmlFor="email1" value="User Name" />

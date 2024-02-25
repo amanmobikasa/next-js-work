@@ -61,12 +61,12 @@ const NavbarComp =()=> {
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Job Portal</span>
       </Navbar.Brand>
       <Navbar.Toggle />
-      <Navbar.Collapse className='items-center flex'>
+      <Navbar.Collapse className=''>
         <div className='flex items-center '>
           <TextInput onChange={handleSearchInput} value={inputSearch} className='rounded-none w-8/12' type='text' placeholder='search here...'/>
           {/* <button className=''>Search</button> */}
         </div>
-        <Navbar.Link as={Link} href="#" active>
+        <Navbar.Link as={Link} href="/" active>
           Home
         </Navbar.Link>
         <Navbar.Link as={Link} href="/signup">
