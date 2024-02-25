@@ -121,7 +121,7 @@ export default function Home() {
           <div className="flex justify-center ">
             <h1 className="text-center text-[2rem] font-[500]">Here is show all the jobs</h1>
           </div>
-            <div className="flex justify-end px-[2rem]">
+            <div className="flex lg:justify-end justify-center px-[2rem]">
             <div className="flex items-center gap-x-3">
               <h1>Sort By : <span>Date</span></h1>
               <button onClick={handleDescSorting } className={`bg-gray-200 px-3 py-2 text-sm rounded-md font-bold ${sorting === "desc" ? "bg-red-500 text-white" : ""}`}>Desc</button>
@@ -130,7 +130,7 @@ export default function Home() {
             </div>
         </div>
           
-          <div className="contaon-cards w-11/12 mx-auto h-full grid grid-cols-3 justify-evenly gap-[2rem] overflow-hidden">
+          <div className="contaon-cards w-11/12 mx-auto h-full grid lg:grid-cols-3 justify-evenly gap-[2rem] overflow-hidden">
            
            {
             jobResultState.length > 0 && jobResultState?.map((job_obj, i)=>{
