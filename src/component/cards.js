@@ -4,6 +4,7 @@
 import { Card } from 'flowbite-react';
 import { useState } from 'react';
 import job_image1 from '@/../public/images/crouselimg1.avif'
+import Image from 'next/image';
 
 const CardsComp =({jobObject})=> {
     const [jobObjectState, setJobObjectState] = useState(jobObject);
@@ -18,10 +19,10 @@ const CardsComp =({jobObject})=> {
 
   return (
     <Card
-      className="max-w-sm"
+      className="max-w-sm box-content max-h-max"
       imgAlt="Apple Watch Series 7 in colors pink, silver, and black"
     >
-     <img src={job_image1} className='object-cover ' alt="" />
+     <Image src={job_image1 ? job_image1 : job_image} className='object-cover aspect-auto' alt={job_title} />
       <a href="#">
         <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
           {job_title && job_title.slice(0, 30) }... <span className='text-xs font-[600]'><span>{(exp_required ? exp_required : "Fresher")}</span></span>
