@@ -19,8 +19,7 @@ const CardsComp =({jobObject})=> {
 
   return (
     <Card
-      className="max-w-sm box-content max-h-max"
-      imgAlt="Apple Watch Series 7 in colors pink, silver, and black"
+      className="max-w-sm box-content h-full overflow-hidden transition-all hover:scale-105 duration-500 delay-200"
     >
      <Image src={job_image1 ? job_image1 : job_image} className='object-cover aspect-auto' alt={job_title} />
       <a href="#">
@@ -46,7 +45,7 @@ const CardsComp =({jobObject})=> {
         
       </div>
       <div>
-        <h1 className='text-xs'>Posted Date : <span className='font-bold'>{timestamp}</span></h1>
+        <h1 className='text-xs'>Posted Date : <span className='font-bold'>{formattedDate}</span></h1>
       </div>
       <div>
         <h1 className='text-xs'>Company : <span className='font-bold '>{company}</span> | Location : <span className='font-bold'>{location}</span></h1>

@@ -113,7 +113,7 @@ export default function Home() {
   return (
     <>
       <Layout >
-        <section className="w-11/12 mx-auto bg-gray-50 space-y-[2rem]">
+        <section className="w-11/12 mx-auto bg-gray-50 space-y-[2rem] h-full py-[2rem]">
         <div>
             {/* <CrouselComp/> */}
         </div>
